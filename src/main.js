@@ -241,7 +241,7 @@ var store = new Vuex.Store({
 // })
 
 
-
+  
 var vm = new Vue({
     el: "#app",
     router,
