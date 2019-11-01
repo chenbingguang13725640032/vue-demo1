@@ -8,6 +8,7 @@
     <transition>
       <router-view></router-view>
     </transition>
+   
     <nav class="mui-bar mui-bar-tab" style="display:flex;justify-content:space-around">
       <span @click="lujin($route.path)">
         <router-link class="mui-tab-item--cbg mui-active" to="/Home">
@@ -37,6 +38,7 @@
         </router-link>
       </span>
     </nav>
+    
   </div>
 </template>
 
@@ -80,6 +82,10 @@ export default {
   padding-top: 40px;
   padding-bottom: 50px;
   overflow-x: hidden;
+  height: 100vh;
+
+ 
+
 
   .mint-header {
     z-index: 99;
@@ -87,6 +93,8 @@ export default {
   .mui-bar-tab .mui-tab-item--cbg.router-link-active {
     color: #007aff;
   }
+
+
 
   .mui-bar-tab .mui-tab-item--cbg {
     display: table-cell;
