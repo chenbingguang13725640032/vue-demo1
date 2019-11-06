@@ -140,8 +140,10 @@ var store = new Vuex.Store({
                 sum: 0
             }
             state.car.forEach(item => {
-                obj.num += parseInt(item.count);
-                obj.sum += item.count * item.price;
+                if (item.zhuangtai === true) {
+                    obj.num += parseInt(item.count);
+                    obj.sum += item.count * item.price;
+                }
             });
             return obj;
         }
@@ -241,7 +243,7 @@ var store = new Vuex.Store({
 // })
 
 
-  
+
 var vm = new Vue({
     el: "#app",
     router,
